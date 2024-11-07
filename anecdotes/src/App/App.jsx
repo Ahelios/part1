@@ -27,9 +27,6 @@ function App() {
     let randomIndex = Math.floor(Math.random() * anecdotes.length);
 
     setSelected(randomIndex);
-    console.log(randomIndex)
-
-    
   }
 
   function handleVote() {
@@ -41,8 +38,6 @@ function App() {
     const maxVotesIndex = newVoteCounter.indexOf(maxVotes);
     setMostVoted(maxVotesIndex);
   }
-
-  console.log(voteCounter)
 
   return (
     <div className={styles.mainBox}>
